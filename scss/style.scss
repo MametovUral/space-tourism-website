@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+// font-family: 'Barlow Condensed', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+// font-family: 'Barlow', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+// font-family: 'Bellefair', serif;
+:root {
+  --primary: #0b0d17;
+  --secondary: #d0d6f9;
+  --tertiary: #ffffff;
+}
+//h1
+.f-150 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 150px;
+  // line-height: 172px;
+  color: var(--tertiary);
+}
+
+//planets-fonts
+.f-100 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 100px;
+  // line-height: 115px;
+  color: var(--tertiary);
+}
+//crew-1-fonts
+.f-28 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  color: var(--secondary);
+}
+//crew-2-fonts
+.f-32 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--tertiary);
+}
+//crew-3-fonts
+.f-56 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: var(--tertiary);
+}
+//dest-fonts-3
+.s-f-28 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: var(--tertiary);
+}
+//dest-fonts-4
+.s-f-14 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: var(--tertiary);
+}
+//nav-planet-fonts
+.n-f-16 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: var(--tertiary);
+}
+//body-text
+.f-b-18 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--tertiary);
+}
