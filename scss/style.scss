@@ -1,3 +1,4 @@
+@import "./base";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
 // font-family: 'Barlow Condensed', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
@@ -89,3 +90,23 @@
   line-height: 32px;
   color: var(--tertiary);
 }
+//body-color
+body {
+  background-color: #0b0d17;
+}
+//container
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container-b {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+@import "./nav";
+@import "./nav-tabs"
