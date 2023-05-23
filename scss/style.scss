@@ -108,5 +108,10 @@ body {
   max-width: 1120px;
   margin: 0 auto;
 }
+.back-g-p {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
 @import "./nav";
-@import "./nav-tabs"
+@import "./nav-tabs";
