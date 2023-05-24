@@ -6,6 +6,7 @@
     width: 100%;
     height: 100vh;
     transition: display 0.5s ease-in;
+    overflow: scroll;
     &.active {
       display: block;
     }
