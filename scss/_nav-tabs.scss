@@ -51,15 +51,15 @@
     padding: 220px 0 0 0;
     background-image: url(/assets/img/page-img/page-2.jpg);
     .dest-container {
-      &__title {
-        display: flex;
-        margin-bottom: 64px;
-        span {
-          font-weight: 700;
-          opacity: 0.25;
-          margin-right: 28px;
-        }
-      }
+      // &__title {
+      //   display: flex;
+      //   margin-bottom: 64px;
+      //   span {
+      //     font-weight: 700;
+      //     opacity: 0.25;
+      //     margin-right: 28px;
+      //   }
+      // }
       &__planets {
         display: flex;
         justify-content: space-between;
@@ -67,7 +67,7 @@
           display: none;
           align-items: end;
           justify-content: center;
-          &.active{
+          &.active {
             display: flex;
           }
         }
@@ -78,6 +78,7 @@
             gap: 29px;
             margin-bottom: 70px;
             li {
+              cursor: pointer;
               &.active {
                 position: relative;
                 &::after {
@@ -110,7 +111,64 @@
                 }
               }
             }
-            &.active{
+            &.active {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .crew-p {
+    padding: 220px 0 0 0;
+    background-image: url(/assets/img/page-img/page-3.jpg);
+    .crew-container {
+      &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        border-bottom: 2px solid #383b4b;
+        .crew-subject {
+          padding-top: 90px;
+          &__title {
+            margin-bottom: 120px;
+            .crew-title {
+              display: none;
+              h4 {
+                opacity: 0.5;
+              }
+              h3 {
+                padding: 15px 0 27px 0;
+              }
+              p {
+                width: 444px;
+                color: #d0d6f9;
+              }
+              &.active {
+                display: block;
+              }
+            }
+          }
+          .crew-list {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 94px;
+            li {
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background-color: #979797;
+              &.active {
+                background-color: #ffffff;
+              }
+            }
+          }
+        }
+        .crew-imgs {
+          &__items {
+            display: none;
+            margin-top: -50px;
+            &.active {
               display: block;
             }
           }
