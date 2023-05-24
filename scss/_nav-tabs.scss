@@ -1,10 +1,10 @@
 .section-tabs {
   &-item {
+    position: absolute;
+    top: -34px;
     display: none;
     width: 100%;
     height: 100vh;
-    position: absolute;
-    top: -34px;
     transition: display 0.5s ease-in;
     &.active {
       display: block;
@@ -50,6 +50,7 @@
     padding: 220px 0 0 0;
     background-image: url(/assets/img/page-img/page-2.jpg);
     .dest-container {
+      padding-bottom: 130px;
       &__title {
         display: flex;
         margin-bottom: 64px;
