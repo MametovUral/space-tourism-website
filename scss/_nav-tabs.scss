@@ -62,6 +62,7 @@
         }
         .dest-subject {
           width: 444px;
+          // background-color: red;
           &__nav {
             display: flex;
             gap: 29px;
@@ -221,6 +222,64 @@
               display: block;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .section-tabs {
+    .home-p {
+      padding: 260px 0 0 0;
+    }
+    .dest-p {
+      padding: 150px 0 0 0;
+      .dest-container {
+        &__planets {
+          .dest-img {
+            align-items: start;
+          }
+          .dest-subject {
+            &__nav {
+              margin-bottom: 50px;
+            }
+            &__content {
+              p {
+                padding: 10px 0 25px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .crew-p {
+      padding: 150px 0 0 0;
+      .crew-container {
+        &__content {
+          align-items: start;
+          .crew-subject {
+            padding-top: 50px;
+            &__title {
+              margin-bottom: 60px;
+            }
+          }
+          .crew-imgs {
+            &__items {
+              img {
+                width: 550px;
+                height: 550px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tech-p {
+      padding: 150px 0 0 0;
+      .tech-container {
+        .d-c-t-title {
+          margin-bottom: 0;
         }
       }
     }

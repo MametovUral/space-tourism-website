@@ -55,3 +55,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 1366px) {
+  .header {
+    .nav {
+      &__list {
+        &::after {
+           width: 350px;
+           left: -38%;
+        }
+      }
+    }
+  }
+}

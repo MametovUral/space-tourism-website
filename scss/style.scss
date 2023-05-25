@@ -123,5 +123,10 @@ body {
   background-position: right;
   background-size: cover;
 }
+@media only screen and (max-width: 1366px) {
+  .container {
+    max-width: 95%;
+  }
+}
 @import "./nav";
 @import "./nav-tabs";
