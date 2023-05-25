@@ -2,13 +2,13 @@
   width: 100%;
   position: fixed;
   top: 34px;
+  z-index: 1;
   .nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     &__logo {
-      margin: 0 0 0 47px;
       z-index: 3;
       cursor: pointer;
     }
