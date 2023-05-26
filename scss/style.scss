@@ -123,6 +123,21 @@ body {
   background-position: right;
   background-size: cover;
 }
+.animate {
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @media only screen and (max-width: 1366px) {
   .container {
     max-width: 95%;

@@ -4,6 +4,7 @@
     display: none;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
     transition: display 0.5s ease-in;
     &.active {
       display: block;
@@ -15,6 +16,7 @@
     .home-container {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 150px;
       &__subject {
         max-width: 450px;
         h1 {
@@ -116,10 +118,14 @@
       &__content {
         display: flex;
         justify-content: space-between;
-        align-items: end;
         border-bottom: 2px solid #383b4b;
+
         .crew-subject {
-          padding-top: 90px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          height: 594px;
           &__title {
             margin-bottom: 120px;
             .crew-title {
@@ -159,6 +165,13 @@
           &__items {
             display: none;
             margin-top: -50px;
+            width: 555px;
+            height: 654px;
+            text-align: center;
+            img {
+              width: 100%;
+              height: 100%;
+            }
             &.active {
               display: block;
             }
@@ -257,19 +270,17 @@
       padding: 150px 0 0 0;
       .crew-container {
         &__content {
-          align-items: start;
           .crew-subject {
-            padding-top: 50px;
+            height: 494px;
             &__title {
               margin-bottom: 60px;
             }
           }
           .crew-imgs {
             &__items {
-              img {
-                width: 550px;
-                height: 550px;
-              }
+              margin-top: 0;
+              width: 100%;
+              height: 100%;
             }
           }
         }
