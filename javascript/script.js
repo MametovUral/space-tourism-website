@@ -1,4 +1,4 @@
-let navList = document.querySelectorAll(".list-item"),
+const navList = document.querySelectorAll(".list-item"),
   sectionTabs = document.querySelectorAll(".section-tabs-item"),
   destNav = document.querySelectorAll(".subject__nav-item"),
   destSub = document.querySelectorAll(".dest-subject__content"),
@@ -17,13 +17,14 @@ function tabsPar(tabsList, tabsItem) {
         tab.classList.remove("active");
       });
       tab.classList.add("active");
-      tabsItem.forEach((content, i) => {
+      tabsItem.forEach((content) => {
         content.classList.remove("active");
       });
       tabsItem[index].classList.add("active");
     });
   });
 }
+
 tabsPar(navList, sectionTabs);
 
 function tabsChild(navTabs, navItem, navImg) {
