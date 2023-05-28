@@ -1,8 +1,8 @@
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 34px;
-  z-index: 1;
+  z-index: 2;
   .nav {
     width: 100%;
     display: flex;
@@ -18,7 +18,7 @@
       padding: 47px 0 37px 0;
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(40.7742px);
-      z-index: 3;
+      // z-index: 3;
       &::after {
         position: absolute;
         content: " ";
@@ -34,6 +34,7 @@
         column-gap: 50px;
         li {
           a {
+            font-size: 14px;
             span {
               font-weight: 700;
             }
@@ -61,8 +62,44 @@
     .nav {
       &__list {
         &::after {
-           width: 350px;
-           left: -38%;
+          width: 350px;
+          left: -38%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .header {
+    .nav {
+      &__list {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header {
+    top: 0;
+    .nav {
+      &__logo {
+        margin-left: 39px;
+      }
+      &__list {
+        width: 450px;
+        padding-left: 9px;
+        &-item {
+          column-gap: 37px;
+          li {
+            a {
+              span {
+                display: none;
+                font-weight: 700;
+              }
+            }
+          }
         }
       }
     }

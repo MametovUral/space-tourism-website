@@ -3,8 +3,8 @@
     position: absolute;
     display: none;
     width: 100%;
-    height: 100%;
-    overflow-y: scroll;
+    height: 100vh;
+    // overflow-y: scroll;
     transition: display 0.5s ease-in;
     &.active {
       display: block;
@@ -58,6 +58,7 @@
           display: none;
           align-items: end;
           justify-content: center;
+          margin-right: 20px;
           &.active {
             display: flex;
           }
@@ -213,7 +214,7 @@
             }
           }
           &__title {
-            width: 470px;
+            max-width: 470px;
             .tech-title {
               display: none;
               p {
@@ -229,6 +230,7 @@
           }
         }
         .tech-imgs {
+          margin-left: 15px;
           &__items {
             display: none;
             &.active {
@@ -291,6 +293,20 @@
       .tech-container {
         .d-c-t-title {
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  .section-tabs {
+    .tech-p {
+      .tech-container {
+        &__content {
+          .tech-subject {
+            gap: 25px;
+          }
         }
       }
     }

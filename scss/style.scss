@@ -142,6 +142,17 @@ body {
   .container {
     max-width: 95%;
   }
+  .container-b{
+    max-width: 85%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+  // .container-b{
+  //   max-width: 85%;
+  // }
 }
 @import "./nav";
 @import "./nav-tabs";
