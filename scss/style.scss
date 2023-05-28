@@ -142,17 +142,29 @@ body {
   .container {
     max-width: 95%;
   }
-  .container-b{
+  .container-b {
     max-width: 85%;
   }
 }
 @media only screen and (max-width: 992px) {
+  .f-100 {
+    font-size: 80px;
+  }
+  .f-28 {
+    font-size: 20px;
+  }
+  .f-b-18 {
+    font-size: 16px;
+  }
   .container {
     max-width: 100%;
   }
-  // .container-b{
-  //   max-width: 85%;
-  // }
+  .d-c-t-title {
+    margin-bottom: 60px;
+    span {
+      margin-right: 20px;
+    }
+  }
 }
 @import "./nav";
 @import "./nav-tabs";
