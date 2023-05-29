@@ -127,7 +127,19 @@ body {
   opacity: 0;
   animation: slideIn 0.5s forwards;
 }
-
+.nav__burger {
+  display: none;
+  width: 24px;
+  height: 21px;
+  position: absolute;
+  right: 40px;
+  top: 34px;
+  z-index: 10;
+  i {
+    font-size: 25px;
+    color: var(--tertiary);
+  }
+}
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -155,6 +167,10 @@ body {
   }
   .f-b-18 {
     font-size: 16px;
+    line-height: 28px;
+  }
+  .s-f-28 {
+    font-size: 20px;
   }
   .container {
     max-width: 100%;
@@ -164,6 +180,21 @@ body {
     span {
       margin-right: 20px;
     }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .s-f-28 {
+    font-size: 16px;
+  }
+  .f-b-18 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .n-f-16 {
+    font-size: 16px;
+  }
+  .nav__burger {
+    display: block;
   }
 }
 @import "./nav";

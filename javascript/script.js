@@ -51,3 +51,10 @@ function tabsChild(navTabs, navItem, navImg) {
 tabsChild(destNav, destSub, destImg);
 tabsChild(crewNav, crewSub, crewImgs);
 tabsChild(techNav, techSub, techimgs);
+
+const menuBurger = document.querySelector(".nav__burger"),
+  navListS = document.querySelector(".nav__list");
+
+menuBurger.addEventListener("click", () => {
+  navListS.classList.toggle("active");
+});
