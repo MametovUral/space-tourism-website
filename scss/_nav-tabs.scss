@@ -435,14 +435,16 @@
       padding: 112px 0 0 0;
       background-image: url(/assets/img/page-img/page-1-1.jpg);
       .home-container {
+        padding-top: 81px;
         flex-direction: column;
         align-items: center;
         margin-bottom: 0;
         &__subject {
-          margin-bottom: 81px;
+          margin-bottom: 0;
          
         }
         &__btn {
+          display: none;
           margin-bottom: 50px;
           .home-btn {
             width: 242px;
