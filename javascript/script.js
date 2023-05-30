@@ -53,8 +53,10 @@ tabsChild(crewNav, crewSub, crewImgs);
 tabsChild(techNav, techSub, techimgs);
 
 const menuBurger = document.querySelector(".nav__burger"),
-  navListS = document.querySelector(".nav__list");
+  navListS = document.querySelector(".nav__list"),
+  menuBurgerActive = document.querySelector(".hamburger-one");
 
 menuBurger.addEventListener("click", () => {
   navListS.classList.toggle("active");
+  menuBurger.classList.toggle("active");
 });

@@ -63,8 +63,7 @@
           }
         }
         .dest-subject {
-          width: 444px;
-          // background-color: red;
+          max-width: 444px;
           &__nav {
             display: flex;
             gap: 29px;
@@ -119,7 +118,6 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 2px solid #383b4b;
-
         .crew-subject {
           width: 100%;
           display: flex;
@@ -351,6 +349,12 @@
             &__nav {
               justify-content: center;
             }
+            &__content {
+              .distance-items {
+                justify-content: space-around;
+                padding: 28px 0px 0 0;
+              }
+            }
           }
         }
       }
@@ -436,12 +440,103 @@
         margin-bottom: 0;
         &__subject {
           margin-bottom: 81px;
+         
         }
         &__btn {
           margin-bottom: 50px;
           .home-btn {
             width: 242px;
             height: 242px;
+          }
+        }
+      }
+    }
+    .dest-p {
+      padding: 90px 0 0 0;
+      .dest-container {
+        &__planets {
+          align-items: center;
+          padding-bottom: 0;
+          .dest-img {
+            margin: 0 0 26px 0;
+            img {
+              width: 170px;
+              height: 170px;
+            }
+          }
+          .dest-subject {
+            text-align: center;
+            &__nav {
+              margin-bottom: 30px;
+              gap: 26px;
+            }
+          }
+        }
+      }
+    }
+    .crew-p {
+      padding: 90px 0 0 0;
+      .crew-container {
+        &__content {
+          flex-direction: column-reverse;
+          border: none;
+          .crew-subject {
+            flex-direction: column-reverse;
+            &__title {
+              .crew-title {
+                p {
+                  padding: 0 20px 0 20px;
+                }
+              }
+            }
+            .crew-list {
+              justify-content: center;
+              margin-bottom: 40px;
+            }
+          }
+          .crew-imgs {
+            &__items {
+              border-bottom: 2px solid #383b4b;
+              margin-bottom: 32px;
+              img {
+                max-width: 327px;
+                height: 333px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tech-p {
+      padding: 90px 0 0 0;
+      .tech-container {
+        .d-c-t-title {
+          margin-bottom: 32px;
+        }
+        &__content {
+          flex-direction: column-reverse;
+          .tech-subject {
+            &__round {
+              .tech-item {
+                width: 40px;
+                height: 40px;
+                &:not(:last-child) {
+                  margin-bottom: 0;
+                }
+              }
+            }
+            &__title {
+              text-align: center;
+            }
+          }
+          .tech-imgs {
+            margin: 0 0 32px 0;
+            &__items {
+              img {
+                height: 270px;
+                object-position: 50% 90%;
+              }
+            }
           }
         }
       }

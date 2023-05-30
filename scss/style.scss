@@ -127,18 +127,58 @@ body {
   opacity: 0;
   animation: slideIn 0.5s forwards;
 }
+.hamburger {
+  top: 50%;
+  left: 10%;
+  width: 100%;
+  height: 5px;
+  background: #fcfcfc;
+  position: absolute;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.hamburger:before {
+  top: -12px;
+}
+
+.hamburger:after {
+  top: 12px;
+}
+
 .nav__burger {
   display: none;
-  width: 24px;
+  width: 30px;
   height: 21px;
   position: absolute;
   right: 40px;
   top: 34px;
   z-index: 10;
-  i {
-    font-size: 25px;
-    color: var(--tertiary);
-  }
+}
+.hamburger-one:before,
+.hamburger-one:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #fcfcfc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.nav__burger.active .hamburger-one {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.nav__burger.active .hamburger-one:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav__burger.active .hamburger-one:after {
+  top: 0;
+  transform: rotate(135deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 @keyframes slideIn {
   from {
@@ -183,6 +223,12 @@ body {
   }
 }
 @media only screen and (max-width: 550px) {
+  .f-100 {
+    font-size: 56px;
+  }
+  .f-150 {
+    font-size: 80px;
+  }
   .s-f-28 {
     font-size: 16px;
   }
@@ -190,11 +236,24 @@ body {
     font-size: 15px;
     line-height: 25px;
   }
+  .f-32 {
+    font-size: 16px;
+  }
+  .f-56 {
+    font-size: 24px;
+  }
   .n-f-16 {
+    font-size: 14px;
+  }
+  .f-28 {
     font-size: 16px;
   }
   .nav__burger {
     display: block;
+  }
+  .d-c-t-title {
+    justify-content: center;
+    margin-bottom: 32px;
   }
 }
 @import "./nav";
